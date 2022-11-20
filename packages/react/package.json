@@ -7,13 +7,15 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --whatch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --whatch",
+    "lint": " eslint src/**/*.{js,jsx,ts,tsx} --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@martins-ui/ts-config": "*",
+    "@martins-ui/eslint-config": "*",
     "@martins-ui/tokens": "*",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"

@@ -6,18 +6,24 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --whatch",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts  --external react --whatch",
     "lint": " eslint src/**/*.{js,jsx,ts,tsx} --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@martins-ui/ts-config": "*",
     "@martins-ui/eslint-config": "*",
     "@martins-ui/tokens": "*",
+    "@martins-ui/ts-config": "*",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "react": "^18.2.0",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }

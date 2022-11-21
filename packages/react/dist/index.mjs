@@ -17,5 +17,14 @@ var colors = {
   orange750: "#DD2C00"
 };
 
-// src/index.ts
-console.log(colors);
+// src/index.tsx
+import { jsx } from "react/jsx-runtime";
+function app() {
+  return /* @__PURE__ */ jsx("h1", {
+    style: { color: colors.blue400 },
+    children: " HELOU WORD "
+  });
+}
+export {
+  app
+};

@@ -70,4 +70,4 @@ export const space = {
 
   360: '90rem',
   378: '94.5rem',
-}
+} 

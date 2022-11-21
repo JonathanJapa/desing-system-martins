@@ -1,0 +1,3 @@
+{
+    "extends": "@martins-ui/eslint-config"
+}

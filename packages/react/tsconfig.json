@@ -1,6 +1,6 @@
 {
-    "extends": "@martins-ui/ts-config/react.json",
-    "include": [
-        "src"
-    ]
+  "extends": "@martins-ui/ts-config/react.json",
+  "include": [
+    "src"
+  ]
 }

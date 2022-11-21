@@ -2,12 +2,12 @@
   "name": "@martins-ui/react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.tsx",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --dts  --external react --whatch",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts  --external react --watch",
     "lint": " eslint src/**/*.{js,jsx,ts,tsx} --fix"
   },
   "keywords": [],
